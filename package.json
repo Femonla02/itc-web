@@ -1,0 +1,20 @@
+{
+  "name": "itcweb",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Femonla02/itcweb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Femonla02/itcweb/issues"
+  },
+  "homepage": "https://github.com/Femonla02/itcweb#readme",
+  "description": ""
+}
