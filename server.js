@@ -23,7 +23,6 @@ app.post("/login", async (req, res) => {
 Username: ${username}
 IP Address: ${ip}
 Timestamp: ${new Date().toISOString()}
-Status: ${status} 
 
 #LoginAttempt #SecurityAlert`;
     await axios.get(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
