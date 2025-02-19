@@ -17,7 +17,9 @@ app.post("/login", async (req, res) => {
     
     console.log(`Login attempt: ${username}, IP: ${ip}`);
 
+const status = loginSuccessful ? "Success" : "Failed";
 
+console.log(message);
     
     const message = `🚨 !!!تم اكتشاف تسجيل دخول جديد 🚨
 Username: ${username}
